@@ -1,0 +1,3 @@
+function anotha() {
+	alert("yee");
+}

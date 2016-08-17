@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<body onload="do_game()">
+    <script type="text/javascript" charset="utf-8">
+        var colors = ["blue", "cyan", "gold", "gray", "green", "magenta", "orange", "red", "white", "yellow"];
+        var target;
+        var count = 0;
+        var finished = false;
+        var guess_input;
+        function do_game() {
+            colors.sort();
+            target = Math.floor(Math.random() * colors.length);
+            do {
+                guess_input = prompt(
+                    "I am thinking of one of these colors:\n\n"+colors+"\n\nWhat color am I thinking of?"
+                )
+                count++;
+            } while (check_guess());
+        }
+        function check_guess() {
+            var i = colors.indexOf(guess_input);
+            if (i < 0)
+                alert("Sorry, I don't recognize your color.\n\nPlease try again.");
+            else if (i > target)
+                alert("Sorry, your guess is not correct!\n\nHint: your input is alphabetically higher than mine.\n\nPlease try again.");
+            else if (i < target)
+                alert("Sorry, your guess is not correct!\n\nHint: your input is alphabetically lower than mine.\n\nPlease try again.");
+            else {
+                success = document.getElementsByTagName("body")[0];
+                success.style.background = colors[target];
+                alert("Congratulations! You have guessed the color!\n\nIt took you "+count+" guesses to finish the game!\n\nYou can see the color in the background.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

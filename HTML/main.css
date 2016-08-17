@@ -1,0 +1,22 @@
+h1 { color: indigo }
+
+#red {color : red}
+#orange {color : orange}
+#yellow {color : yellow}
+#green {color : green}
+#blue {color : blue}
+#indigo {color : indigo}
+#violet {color : violet}
+#rainbow {background: black}
+
+p:hover {color: green}
+li:empty {background: black}
+
+a:link {color: blue}
+a:visited {color: purple}
+a:active {background: red}
+
+table, td, th {border: 1px solid black; padding: 10px; 
+	width: 50%; text-align: center}
+td {color: purple}
+th {color: white; background: black}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- This is a comment -->
+		<title>Learning HTML</title>
+		<meta name="author" content="GOAT">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<style type="text/css">
+			p { color: black }
+			.thing {color: white; background: blue}
+			.one {background: black}
+			.two {color: red}
+			li {background: grey}
+			
+		</style>
+	</head>
+	<body>
+	<section id="here">
+
+		<h1>Simple Webpage</h1>
+		<p>Nik Mathur</p>
+		<button>Push for fun</button>
+	</section>
+	<section>
+		<ul>
+			<li>Item one</li>
+			<li>another one</li>
+			<li>last bullet</li>
+		</ul>
+		<ol>
+			<li>numbah 1</li>
+			<li>dos</li>
+		</ol>
+		<h1>Start numbering</h1>
+		<ol start="2014">
+			<li>Graduation</li>
+			<li>Last year</li>
+			<li>Current year</li>
+		<ol Type="A">
+			<li>is for apple</li>
+			<li>is for BIG data</li>
+			<li>is for C#</li>
+	</section>
+	<section>
+		<p>This is <i>italics</i></p>
+		<p>This is <em>emphasis</em></p>
+		<p>This <b>bold</b></p>
+		<p>This is <strong>strong</strong></p>
+		<p> don't use <u>underline</u></p>
+		<p>this is <small>small</small></p>
+		<p>this is <big>not</big> part of HTML5</p>
+		<p>this is <mark>highlight</mark></p>
+		<p>this is <sub>subscript</sub></p>
+		<p>this is <sup>superscript</sup></p>
+		<p>this is <ins>inserted</ins></p>
+		<p>this is <del>deleted</del></p>
+	</section>
+	<section>
+		<p>This is a lighthouse</p>
+		<img src="Lighthouse.jpg" width="70%">
+		<p>This is a song called Chaos on autoplay loop (turn your volume up!)</p>
+		<!--audio src="Chaos.mp3" autoplay></audio-->
+		<!--audio src="Chaos.mp3" autoplay loop></audio-->
+
+		<audio src="Chaos.mp3" controls>
+			<p>Only shows on old browsers</p>
+		</audio>
+		<p>This is a video from Tahoe</p>
+		<video src="ex.mov" controls height="300"
+			alt="Video of snowballs">
+		</video>
+	</section>
+	<section>
+		Click <a href="https://www.xkcd.com/">this</a>
+		<p>Lion goes to Apple website</p>
+		<a href="https://www.apple.com/"><img src="Lion.jpg" height="50"></a>
+		<br>
+		<a href="#here">Go to top</a>
+		<!--a href="facebook.com#here">Go here</a-->
+	</section>
+	<section>
+		<p>
+			This is a lot of words that I am typing except not really it is just a few words, but I need at least some amount of words on this page.<br>You know what I mean?
+		</p>
+		<p>
+			Wanna see a wordbreak? I need even way more words lol. This word is antidis<wbr>establishmentarianism.
+		</p>
+		<p>
+			This is a <hr>THEMATIC BREAK
+		</p>
+	</section>
+	<section>
+		<ul id="rainbow">
+			<li id="red">Red</li>
+			<li id="orange">Orange</li>
+			<li id="yellow">Yellow</li>
+			<li id="green">Green</li>
+			<li id="blue">Blue</li>
+			<li id="indigo">Indigo</li>
+			<li id="violet">Violet</li>
+			<li></li>
+		</ul>
+		<h1 class="thing">Class</h1>
+		<h1 class="one two">Combine</h1>
+		<p style="text-align:right; color:lime">Right</p>
+		<p></p>
+	</section>
+	<table>
+		<thead>
+			<tr> <th>Language</th> <th>Class</th></tr>
+		</thead>
+		<tbody>
+			<tr> <td>Python</td> <td>CS 61A</td></tr>
+			<tr> <td>Java</td> <td>CS 61B</td></tr>
+			<tr> <td>C</td> <td>CS 61C</td></tr>
+		</tbody>
+	</table>
+	<section>
+		<p>Before div</p>
+		<div>
+			This is in div
+		</div>
+		<p>another one outside div</p>
+		<div style="background: lightblue; font-size:14pt; font-family:courier; width: 25%">
+			style div
+		</div>
+		<div style="position:absolute; top:20px; left:90%">
+			icon
+		</div>
+		<div style="position:relative; top:20px; left:80%">
+			nah
+		</div>
+		<p>No span but then <span style="background:yellow"> add span</span> and then remove</p>
+	</section>
+	<section>
+		<form action="destination" method="get">
+			<p>Please give feedback.</p>
+			<textarea rows="3" cols="50%" name="feedback"
+			style="text-align: left">
+			Please give some feedback.
+			</textarea>
+			<br>
+			<input type="submit" value="Send"> <br> <br>
+		</form>
+		<form>
+			Enter your name.
+			<br>
+			<input type="text" name="user" placeholder="bleh">
+			<br> <br>
+			Select foods you like. <br>
+			<input type="checkbox" name="food" value="Pizza"> Pizza 
+			<br>
+			<input type="checkbox" name="food" value="Chicken"> Chicken
+			<br>
+			<input type="checkbox" name="food" value="Cake"> Cake
+			<br>
+			<input type="checkbox" name="food" value="Pasta"> Pasta
+			<br>
+			<br>
+			Select your age group. <br>
+			<input type="radio" name="age" value="Youth"> Youth
+			<br>
+			<input type="radio" name="age" value="Teen" checked> Teen
+			<br>
+			<input type="radio" name="age" value="Adult"> Adult <br> <br>
+			Enter your password. <br>
+			<input type="password" name="pass" required> <br> <br>
+			What city do you wish to go to? <br>
+			<select name="city">
+				<option value="hk">Hong Kong</option>
+				<option value="nyc">New York City</option>
+				<option value="sf">San Francisco</option>
+			</select>
+		</form>
+		<form>
+			Fill in the information. <br>
+			<label for="first">First name:</label>
+			<input type="text" id="first" name="first" autofocus> <br>
+		</form>
+		<br> <br>
+		<form>
+		<fieldset>
+		<legend>Information</legend>
+			<label for="age">Age: </label>
+			<input type="number" min="0" step="1" id="age" name="age" required><br>
+			<label for="birthday">Birthday: </label>
+			<input type="date" id="birthday" name="birthday"><br>
+		</fieldset>
+		<fieldset>
+		<legend>other</legend>
+			<label for="alarm">Alarm time: </label>
+			<input type="time" id="alarm" name="alarm" value="00:00"><br>
+			<label for="color">Color: </label>
+			<input type="color" id="color" name="color"><br>
+			<label for="mood">Feeling?: </label>
+			Sad <input type="range" min="0" max="100" id="mood" name="mood" step="1" value="50"> Happy 
+			</fieldset><br>
+		</form>
+	</section>
+	</body>
+</html>
